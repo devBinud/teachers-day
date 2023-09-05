@@ -1,0 +1,123 @@
+/* CSS RESET  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+.techersdaywish__wrapper{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.techersdaywish{
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+    /* border: 2px solid #ddd; */
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.teachersdaywish__left{
+    height: 80vh;
+    padding: 20px;
+    padding-top: 30px;
+    background-color:rgb(252, 241, 226);
+}
+.teachersdaywish__left p{
+    color: #545454;
+}
+.teachersdaywish__right{
+    padding: 20px;
+    height: 80vh;
+    padding-top: 45px;
+    background-color:rgb(252, 241, 226);
+}
+.teachersdaywish__right img{
+    max-width: 80%;
+}
+.teachersdaywish__right .founders__image{
+    margin-top: 70px;
+}
+
+/* wavy effect of text  */
+ 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000;
+        }
+
+        .wave {
+            position: relative;
+            -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, .2));
+        }
+
+        .wave span {
+            position: relative;
+            display: inline-block;
+            color: #141212;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            animation: animate 2s ease-in-out infinite;
+            animation-delay: calc(.1s*var(--i));
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0px);
+            }
+
+            20% {
+                transform: translateY(-20px);
+            }
+
+            40%,
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .quotes{
+            margin: 24px 30px;
+        }
+        .quotes h6{
+            text-align:left;
+            line-height: 25px;
+            color: #363535;
+        }
+        .quotes h3{
+            margin-top: 40px;
+            font-size: 22px;
+            background: -webkit-linear-gradient(#646464, #ff7214);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+        }
+        .wishes_left{
+            font-size: 15px;
+            background: -webkit-linear-gradient(#646464, #150501);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* MEDIA QUERIES  */
+        @media screen and (max-width:576px){
+            .teachersdaywish__right{
+                height: 100vh;
+            }
+            .teachersdaywish__right .title{
+                font-size: 18px;
+            }
+            .teachersdaywish__left {
+                height: 100vh;
+                padding: 15px;
+                font-size: 12px;
+                padding-top: 20px;
+                background-color: rgb(252, 241, 226);
+                    }
+    }
